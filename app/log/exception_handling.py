@@ -48,6 +48,11 @@ def excepthook(exc_type, exc_value, traceback_):
     sys.__excepthook__(exc_type, exc_value, traceback_)
 
 def send_error_msg( message):
+    print("api access prohibitted")
+    return {
+        'code': 404,
+        'errmsg': 'api access prohibitted'
+    }
     url = "http://api.lc044.love/error"
     if not message:
         return {

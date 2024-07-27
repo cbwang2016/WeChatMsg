@@ -31,5 +31,5 @@ os.makedirs('./app/data', exist_ok=True)
 os.makedirs(DB_DIR, exist_ok=True)
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 # 全局参数
-SEND_LOG_FLAG = True  # 是否发送错误日志
-SERVER_API_URL = 'http://api.lc044.love'  # api接口
+SEND_LOG_FLAG = False  # 是否发送错误日志
+SERVER_API_URL = 'http://127.0.0.1'#'http://api.lc044.love'  # api接口

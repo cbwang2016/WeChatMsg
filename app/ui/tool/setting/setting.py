@@ -177,6 +177,11 @@ class MyThread(QThread):
         pass
 
     def send_error_msg(self, message):
+        print("api access prohibitted")
+        return {
+            'code': 404,
+            'errmsg': 'api access prohibitted'
+        }
         url = "http://api.lc044.love/error"
         if not message:
             return {
